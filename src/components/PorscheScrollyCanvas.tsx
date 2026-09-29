@@ -313,6 +313,7 @@ export default function PorscheScrollyCanvas() {
           <div className="absolute top-[100px] sm:top-[116px] right-4 sm:right-8 z-30 pointer-events-auto">
             <button
               onClick={toggleSound}
+              data-cursor-label="AUDIO // ACOUSTIC ENGINE"
               className="flex items-center space-x-2 px-3.5 py-1.5 rounded-none border border-white/20 bg-black/60 backdrop-blur-md text-[11px] font-mono tracking-wider text-neutral-300 hover:text-white hover:border-emerald-500/60 transition-all duration-200 active:scale-95 shadow-md"
               title="Toggle Real Porsche Engine Rev Sound"
             >
@@ -419,6 +420,7 @@ export default function PorscheScrollyCanvas() {
               <div className="mt-8 pointer-events-auto">
                 <a
                   href="#configurator"
+                  data-cursor-label="ATELIER // BESPOKE BUILD"
                   className="inline-flex items-center space-x-2 px-8 py-3.5 rounded-none bg-emerald-500 text-black font-medium text-xs font-mono tracking-[0.2em] uppercase hover:bg-emerald-400 transition-all duration-200 shadow-md active:scale-95"
                 >
                   <span>Configure Your GT3 RS</span>

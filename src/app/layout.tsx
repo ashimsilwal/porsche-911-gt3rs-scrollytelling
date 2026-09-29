@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import GameCursor from "@/components/GameCursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -59,6 +60,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} dark scroll-smooth`}
     >
       <body className="bg-[#0a0a0c] text-[#ededed] min-h-screen antialiased selection:bg-emerald-500/30 selection:text-white">
+        <GameCursor />
         {children}
       </body>
     </html>

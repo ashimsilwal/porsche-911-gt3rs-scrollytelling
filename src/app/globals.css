@@ -107,3 +107,10 @@
 .animate-pulse-slow {
   animation: pulseSlow 4s ease-in-out infinite;
 }
+
+/* Precision Game Cursor - Desktop Only */
+@media (hover: hover) and (pointer: fine) {
+  body, a, button, input, select, textarea, [role="button"] {
+    cursor: none !important;
+  }
+}

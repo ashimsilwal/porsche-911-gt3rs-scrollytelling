@@ -153,6 +153,7 @@ export default function Home() {
           <div className="flex items-center space-x-3">
             <a
               href="#configurator"
+              data-cursor-label="ATELIER // INQUIRE"
               className="hidden sm:inline-flex items-center space-x-2 px-5 py-2 rounded-none border border-emerald-500/60 bg-emerald-950/40 text-xs font-mono tracking-[0.2em] text-emerald-300 hover:bg-emerald-400 hover:text-black hover:border-emerald-400 transition-all duration-200 active:scale-95 shadow-sm"
             >
               <span>INQUIRE ATELIER</span>
@@ -312,6 +313,7 @@ export default function Home() {
             <div className="mt-6 md:mt-0 flex items-center p-1 rounded-none border border-white/15 bg-neutral-900/70 backdrop-blur-md">
               <button
                 onClick={() => setActiveTab("powertrain")}
+                data-cursor-label="SYS // 4.0L FLAT-SIX"
                 className={`px-5 py-2 rounded-none text-xs font-mono tracking-[0.15em] uppercase transition-all ${
                   activeTab === "powertrain"
                     ? "bg-emerald-500 text-black font-medium"
@@ -322,6 +324,7 @@ export default function Home() {
               </button>
               <button
                 onClick={() => setActiveTab("aero")}
+                data-cursor-label="SYS // ACTIVE DRS"
                 className={`px-5 py-2 rounded-none text-xs font-mono tracking-[0.15em] uppercase transition-all ${
                   activeTab === "aero"
                     ? "bg-emerald-500 text-black font-medium"
@@ -332,6 +335,7 @@ export default function Home() {
               </button>
               <button
                 onClick={() => setActiveTab("chassis")}
+                data-cursor-label="SYS // DOUBLE-WISHBONE"
                 className={`px-5 py-2 rounded-none text-xs font-mono tracking-[0.15em] uppercase transition-all ${
                   activeTab === "chassis"
                     ? "bg-emerald-500 text-black font-medium"
@@ -513,6 +517,7 @@ export default function Home() {
                   <button
                     key={c.name}
                     onClick={() => setActiveColor(c)}
+                    data-cursor-label={`PAINT // ${c.name.toUpperCase()}`}
                     className={`group relative flex items-center justify-center w-11 h-11 rounded-none border-2 transition-all duration-200 ${
                       activeColor.name === c.name
                         ? "border-emerald-400 scale-105 shadow-[0_0_15px_rgba(16,185,129,0.4)]"
@@ -548,6 +553,7 @@ export default function Home() {
             <div className="w-full lg:w-auto flex flex-col sm:flex-row gap-4">
               <button
                 onClick={() => alert(`Configured ${activeColor.name}. Note: This is an educational demonstration project. No commercial orders are processed.`)}
+                data-cursor-label="ALLOCATION // REQUEST"
                 className="px-8 py-3.5 rounded-none bg-emerald-500 text-black font-medium text-xs font-mono tracking-[0.2em] uppercase hover:bg-emerald-400 transition-all duration-200 shadow-md active:scale-95"
               >
                 REQUEST PRODUCTION ALLOCATION
