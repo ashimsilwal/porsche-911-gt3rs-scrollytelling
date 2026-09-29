@@ -38,6 +38,14 @@ export const metadata: Metadata = {
     description: "Interactive aerodynamic disassembly and engineering experience.",
     type: "website",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico" },
+      { url: "/icon.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({
